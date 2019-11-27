@@ -1,0 +1,109 @@
+/* definindo local do menu na página */
+*{margin: 0; padding: 0;}
+ 
+ /* Definindo fonte para o menu*/
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 17px;
+}
+ 
+ /* defindindo estilo do menu  */
+.menu{
+list-style:none; 
+border:1px solid #c0c0c0; 
+float:left; 
+}
+
+/* Definindo estilo para lista do menu */
+.menu li{
+position:relative;  /* Possibilita posicionar o submenu */
+float:left; 
+border-right:1px solid #c0c0c0; 
+}
+
+ /* defindindo estilo do menu para login */
+.menu2{
+list-style:none; 
+border:1px solid #c0c0c0; 
+float:right; 
+}
+
+/* Definindo estilo para lista do menu */
+.menu2 li{
+position:relative;  /* Possibilita posicionar o submenu */
+float:right; 
+border-right:1px solid #c0c0c0; 
+}
+
+/* Estilizando os links */
+.menu li a{color:#333; text-decoration:none; padding:3px 10px; display:block; }
+ 
+.menu li a:hover{
+background:#333; 
+color:#fff; 
+-moz-box-shadow:0 3px 10px 10 #CCC; 
+-webkit-box-shadow:0 px 10px 0 #ccc; 
+text-shadow:0px 0px 5px #fff; 
+}
+
+
+/* Estilizando os links menu2 */
+.menu2 li a{color:#333; text-decoration:none; padding:5px 11px; display:block;}
+ 
+ 
+.menu2 li a:hover{
+background:#333; 
+color:#fff; 
+-moz-box-shadow:0 3px 10px 0 #CCC; 
+-webkit-box-shadow:0 3px 10px 0 #ccc; 
+text-shadow:0px 0px 5px #fff; 
+}
+
+/* Definindo o submenu */
+.menu2 li  ul{
+position:absolute; 
+top:32px; 
+left:0;
+background-color:#fff; 
+display:none;
+} 
+
+.menu2 li:hover ul, .menu li.over ul{display:block;}
+.menu2 li ul li{
+border:1px solid #c0c0c0; 
+display:block; 
+width:95px;
+}
+
+/* -----------------ESTILO DO MAPA ----------------- */
+
+
+#map {
+       <!-- position:absolute; top:0; bottom:0; width:100%; 
+	border-left:0px solid #fff;
+      position:absolute;
+      left:0%;
+	  width:100%;
+      z-index:-50;
+      top:6%;
+	  bottom:0;
+      }
+	  
+
+.marker {
+		background-image: url('publico.png');
+		background-size: cover;
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		cursor: pointer;
+		}
+.mapboxgl-popup {
+		max-width: 200px;
+		}
+
+.mapboxgl-popup-content {
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		}
+
