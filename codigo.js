@@ -57,7 +57,7 @@ window.onload = function (){
             }
     },
     onEachFeature: function (feicao, camada){
-    camada.bindTooltip(feicao.properties['nome'])
+    camada.bindTooltip(feicao.properties['NOME'])
     }
     }).addTo(map); 
 
